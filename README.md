@@ -1,5 +1,26 @@
 # NTFS simulator
 
+##Commands
+Detailed explanation of the individual commands.
+
+COMMAND | NAME | SYNOPSIS | DESCRIPTION | OPTIONS 
+| --- | --- | --- | --- | :---:
+MKDIR | mkdir - creates a new directory if it does not already exist. | **mkdir** *directory* | Create the directorie specified by the operand | x
+CREATE | create - creates a new fle if it does not already exist. | **create** filename | | x
+PUT | | | | x
+GET | | | | x
+LS | | | | x
+MOVE | | | | x
+RENAME | | | | x
+ECHO | | | | x
+CP | | | | x
+CAT | | | | x
+RM | | | | x
+STAT | stat - shows information about the file | **stat** *filename* | Show detail information about the file including information from file headers and information about the MFT entry. | x
+CD | cd - change the working directory | **cd** *path*<br>**cd** .. | Change the working directory of the current "shell execution environment".<br/><ul><li>If no *path* operand is given, error message "*Command has wrong number of arguments!*" will be displayed.</li><li>If the *path* operand is dot-dot, the current path will be changed to the previous subdirectory.</li></ul> | x
+CLS | cls - reset the terminal | **cls** | Past inputs are deleted. | x
+EXIT | exit - cause program termination | **exit** | Cause normal process termination. | x
+
 ## Limitations
 <p align="justify">As I have stated previously, this is an in-memory implementation of simplified NTFS. Project is mainly focuses around MFT (<a href="https://en.wikipedia.org/wiki/NTFS#Master_File_Table">Master File Table</a>) and it ignores journaling, security descriptors and other similar topics. It also only supports <a href="https://en.wikipedia.org/wiki/NTFS#Resident_vs._non-resident_attributes">resident files</a>, which is why the <a href="https://en.wikipedia.org/wiki/B-tree">B-tree</a> storage of large file storage isn't implemented. All directory records reside entirely within MFT structure.
 <ol>
@@ -17,3 +38,4 @@
 - [ ] Implement file system logging.
 - [ ] Implement MFT mirror.
 - [ ] Implement Bitmaps and Bad clusers detection.
+- [ ] Remove max. limit of file system depth.
