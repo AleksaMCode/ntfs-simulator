@@ -15,8 +15,8 @@ CAT | cat - print file on the standard output  | **cat** *FILE* | Concatenate FI
 RENAME | rename - rename file or directory | **rename** *SOURCE* *DEST* | Rename SOURCE to DEST. | x
 ECHO | echo - write string(s) to file | **echo** *FILE* *STRING* | Echo the STRING to the FILE. Creates/overwrites the FILE. | x
 RM | rm - remove files or directories | **rm** [*OPTION*] FILE | **rm** removes each specified file. By default, it does not remove directories. | <p align="justify"><b>-f</b><br>remove directories and their contents recursively</p>
-STAT | stat - shows information about the file | **stat** *filename* | Show detail information about the file including information from file headers and information about the MFT entry. | x
-CD | cd - change the working directory | **cd** *path*<br>**cd** .. | Change the working directory of the current "shell execution environment".<br/><ul><li>If no *path* operand is given, error message "*Command has wrong number of arguments!*" will be displayed.</li><li>If the *path* operand is dot-dot, the current path will be changed to the previous subdirectory.</li></ul> | x
+STAT | stat - shows information about the file | **stat** *FILE* | Show detail information about the file including information from file headers and information about the MFT entry. | x
+CD | cd - change the working directory | **cd** *DEST* <br>**cd** .. | Change the working directory of the current "shell execution environment".<br/><ul><li>If no *path* operand is given, error message "*Command has wrong number of arguments!*" will be displayed.</li><li>If the *path* operand is dot-dot, the current path will be changed to the previous subdirectory.</li></ul> | x
 CLS | cls - reset the terminal | **cls** | Past inputs are deleted. | x
 EXIT | exit - cause program termination | **exit** | Cause normal process termination. | x
 
@@ -39,6 +39,7 @@ EXIT | exit - cause program termination | **exit** | Cause normal process termin
 - [ ] Implement Bitmaps and Bad clusers detection.
 - [ ] Remove max. limit of file system depth.
 - [ ] Implement file compression.
+- [ ] Expand the available command list.
 
 ## References
 <ul>
