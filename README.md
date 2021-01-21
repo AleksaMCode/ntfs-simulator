@@ -7,14 +7,14 @@ COMMAND | NAME | SYNOPSIS | DESCRIPTION | OPTIONS
 MKDIR | mkdir - creates a new directory if it does not already exist. | **mkdir** *DIRECTORY* | Create the *DIRECTORY* specified by the operand | x
 CREATE | create - creates a new file if it does not already exist. | **create** *FILE* | Update the access and modification times of each FILE to the current time.<br> FILE argument that does not exist is created empty. | x
 PUT | put - "uploads" a file from Windows fs to in-memory fs | **put** *FILE* | Copies the file from specified path to RAM memory. | x
-GET | | | | x
-LS | | | | x
-MOVE | | | | x
-RENAME | | | | x
-ECHO | | | | x
-CP | | | | x
-CAT | | | | x
-RM | rm - remove files or directories | **rm** [*OPTION*] FILE | **rm** removes each specified file. By default, it does not remove directories. | **-f**<br>remove directories and their contents recursively
+GET | get - "downloads" a file from in-memory fs to fs on Windows | **get** *SOURCE* *DEST* | Copies the SOURCE from specified RAM memory to a file specified by the DEST (path + name + extension). | x
+LS |  ls - list directory contents | **ls** | List information about the current directory. Sort entries alphabetically. | x
+CP | cp - copy file | **cp** *FILE* *DIRECTORY* | Copy SOURCE to DIRECTORY inside of the in-memory fs. | x
+MV | mv -move file | **mv** *FILE* *DIRECTORY*  | Moves SOURCE to DIRECTORY inside of the in-memory fs. | x
+CAT | cat - print file on the standard output  | **cat** *FILE* | Concatenate FILE to standard output. | x
+RENAME | rename - rename file or directory | **rename** *SOURCE* *DEST* | Rename SOURCE to DEST. | x
+ECHO | echo - write string(s) to file | **echo** *FILE* *STRING* | Echo the STRING to the FILE. Creates/overwrites the FILE. | x
+RM | rm - remove files or directories | **rm** [*OPTION*] FILE | **rm** removes each specified file. By default, it does not remove directories. | <p align="justify"><b>-f</b><br>remove directories and their contents recursively</p>
 STAT | stat - shows information about the file | **stat** *filename* | Show detail information about the file including information from file headers and information about the MFT entry. | x
 CD | cd - change the working directory | **cd** *path*<br>**cd** .. | Change the working directory of the current "shell execution environment".<br/><ul><li>If no *path* operand is given, error message "*Command has wrong number of arguments!*" will be displayed.</li><li>If the *path* operand is dot-dot, the current path will be changed to the previous subdirectory.</li></ul> | x
 CLS | cls - reset the terminal | **cls** | Past inputs are deleted. | x
