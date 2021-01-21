@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD7D8C11-692E-4B5E-A813-BE6A11DCC238}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FileSystem</RootNamespace>
+    <AssemblyName>FileSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\AttributeGeneric.cs" />
+    <Compile Include="Attributes\AttributeList.cs" />
+    <Compile Include="Attributes\AttributeListEntry.cs" />
+    <Compile Include="Attributes\AttributeRecord.cs" />
+    <Compile Include="Attributes\AttributeResidentHeader.cs" />
+    <Compile Include="Attributes\Bitmap.cs" />
+    <Compile Include="Attributes\EA\ExtenedAttributes.cs" />
+    <Compile Include="Attributes\EA\ExtenedAttributeInformation.cs" />
+    <Compile Include="Attributes\Indexroot\IndexNodeHeader.cs" />
+    <Compile Include="Attributes\Indexroot\IndexRoot.cs" />
+    <Compile Include="Attributes\Indexroot\IndexRootHeader.cs" />
+    <Compile Include="Attributes\LoggedUtilityStream.cs" />
+    <Compile Include="Attributes\VolumeInformation.cs" />
+    <Compile Include="Attributes\VolumeName.cs" />
+    <Compile Include="Boot\BPB.cs" />
+    <Compile Include="Attributes\Data.cs" />
+    <Compile Include="Enums\CollationType.cs" />
+    <Compile Include="Enums\EAFlags.cs" />
+    <Compile Include="Enums\FileNamespace.cs" />
+    <Compile Include="Boot\ExtendedBPB.cs" />
+    <Compile Include="Attributes\FileName.cs" />
+    <Compile Include="Attributes\ObjectId.cs" />
+    <Compile Include="Attributes\StandardInformation.cs" />
+    <Compile Include="Boot\BootSector.cs" />
+    <Compile Include="Enums\AttributeFlags.cs" />
+    <Compile Include="Enums\AttributeResidentPermition.cs" />
+    <Compile Include="Enums\AttributeTypeCode.cs" />
+    <Compile Include="Enums\IndexNodeFlags.cs" />
+    <Compile Include="Enums\IndexValueFlags.cs" />
+    <Compile Include="Enums\MFTEntryFlags.cs" />
+    <Compile Include="Enums\MFTFiles.cs" />
+    <Compile Include="Enums\ResidentFileFlag.cs" />
+    <Compile Include="Enums\VolumeInformationFlags.cs" />
+    <Compile Include="ExtenedAttribute.cs" />
+    <Compile Include="FileRecordSegmentHeader.cs" />
+    <Compile Include="IndexValue.cs" />
+    <Compile Include="INtfsFs.cs" />
+    <Compile Include="ISaveObjects.cs" />
+    <Compile Include="LittleEndianConverter.cs" />
+    <Compile Include="MFTSegmentReference.cs" />
+    <Compile Include="MultiSectorHeader.cs" />
+    <Compile Include="NtfsFileSystem.cs" />
+    <Compile Include="NtfsHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
