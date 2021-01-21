@@ -31,7 +31,7 @@ namespace FileSystem
             Tuple.Create("stat", 1, 1),    // stat filename w/ *.extension
             Tuple.Create("cd", 1, 1),      // cd location
             Tuple.Create("cd..", 0, 0),    // cd..
-            Tuple.Create("cls", 0, 0),     // cld
+            Tuple.Create("cls", 0, 0),     // cls
             Tuple.Create("exit", 0, 0)     // exit
         };
 
