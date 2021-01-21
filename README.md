@@ -40,6 +40,7 @@ EXIT | exit - cause program termination | **exit** | Cause normal process termin
 - [ ] Remove max. limit of file system depth.
 - [ ] Implement file compression.
 - [ ] Expand the available command list.
+- [ ] Fix **rm** command.
 
 ## References
 <ul>
