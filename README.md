@@ -1,6 +1,7 @@
 # NTFS simulator
 <p align="justify">The goal of this project was to simulate NTFS structures and file system. I made this project so I could get a better understanding of file systems.
-I created this project a year and a half ago, but I never got around to opensourcing it. For the most part, documentation is currently largely not written.</p>
+I created this project a year and a half ago, but I never got around to opensourcing it. For the most part, documentation is currently largely not written.<br>
+Currently you can create a new in-memory NTFS, modify it and save it to a fs. Reading a written binary file containing virtual fs to RAM isn't implemented.</p>
 
 ## Commands
 Detailed explanation of the individual commands.
@@ -45,6 +46,8 @@ EXIT | exit - cause program termination | **exit** | Cause normal process termin
 - [ ] Expand the available command list.
 - [ ] Fix **rm** command.
 - [ ] Write detailed documentation.
+- [ ] Implement binary file parser used to read already created fs.
+  - [ ] Optimise binary file reading.
 
 ## References
 <ul>
