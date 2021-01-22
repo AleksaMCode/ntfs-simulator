@@ -1,12 +1,12 @@
 # NTFS simulator
-<p align="justify">The goal of this project was to simulate NTFS structures and file system. I made this project so I could get a better understanding of file systems.<br>
+<p align="justify">The goal of this project was to simulate NTFS structures and file system. I made this project so I could get a better understanding of file systems.
 I created this project a year and a half ago, but I never got around to opensourcing it. For the most part, documentation is currently largely not written.</p>
 
 ## Commands
 Detailed explanation of the individual commands.
 
 COMMAND | NAME | SYNOPSIS | DESCRIPTION | OPTIONS 
-| --- | --- | --- | --- | :---:
+| ----- | ----- | ----- | ----- | :-----:
 MKDIR | mkdir - creates a new directory if it does not already exist. | **mkdir** *DIRECTORY* | Create the *DIRECTORY* specified by the operand | x
 CREATE | create - creates a new file if it does not already exist. | **create** *FILE* | Update the access and modification times of each FILE to the current time.<br> FILE argument that does not exist is created empty. | x
 PUT | put - "uploads" a file from Windows fs to in-memory fs | **put** *FILE* | Copies the file from specified path to RAM memory. | x
