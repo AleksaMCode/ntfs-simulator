@@ -1,4 +1,7 @@
 # NTFS simulator
+<p align="justify">The goal of this project was to simulate NTFS structures and file system. I made this project so I could get a better understanding of file systems.<br>
+I created this project a year and a half ago, but I never got around to opensourcing it. For the most part, documentation is currently largely not written.</p>
+
 ## Commands
 Detailed explanation of the individual commands.
 
@@ -41,6 +44,7 @@ EXIT | exit - cause program termination | **exit** | Cause normal process termin
 - [ ] Implement file compression.
 - [ ] Expand the available command list.
 - [ ] Fix **rm** command.
+- [ ] Write detailed documentation.
 
 ## References
 <ul>
@@ -53,4 +57,6 @@ EXIT | exit - cause program termination | **exit** | Cause normal process termin
     <li><p align="justify"><a href="http://technet.microsoft.com/en-us/library/cc781134(WS.10).aspx">How NTFS Works</a></p></li>
     <li><p align="justify"><a href="http://technet.microsoft.com/en-us/library/cc976808.aspx">The NTFS File System</a></p></li>
     <li><p align="justify"><a href="http://technet.microsoft.com/en-us/library/cc976796.aspx">Boot Sector</a></p></li>
+    <li><p align="justify"><a href="https://docs.microsoft.com/en-us/windows/win32/devnotes/master-file-table">Master File Table</a></p></li>
     <li><p align="justify"><a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc976786(v=technet.10)">Master Boot Record</a></p></li>
+    <li><p align="justify"><a href="http://ntfs.com/">www.ntfs.com</a></p></li>
