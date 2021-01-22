@@ -37,6 +37,7 @@ EXIT | exit - cause program termination | **exit** | Cause normal process termin
 ## To-Do List
 - [ ] Implement binary file parser used to read already created fs.
   - [ ] Optimise binary file reading.
+- [ ] Add relative paths.
 - [ ] Implement non-resident large file storage using B-tree.
   - [ ] Remove arbitrary file and file system limits.
 - [ ] Implement journaling.
